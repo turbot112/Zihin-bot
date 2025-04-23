@@ -2,9 +2,9 @@ import os
 import telegram
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = -1004634117873  # Güncel grup chat ID
+CHAT_ID = -1004634117873  # Güncel grup ID
 
-print(f"[DEBUG] TOKEN: {BOT_TOKEN}")  # Debug için
+print(f"[DEBUG] TOKEN: {BOT_TOKEN}")
 
 if not BOT_TOKEN:
     raise Exception("BOT_TOKEN ortam değişkeni tanımlı değil!")
@@ -15,3 +15,5 @@ try:
     print("Mesaj başarıyla gönderildi.")
 except telegram.error.Unauthorized:
     raise Exception("TOKEN geçersiz! Lütfen yeni bir bot token gir.")
+except Exception as e:
+    print(f"HATA: {e}")
