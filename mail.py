@@ -174,3 +174,15 @@ if __name__ == "__main__":
         msg = input('Message: ') or ''
         file = input('Attachment: ') or ''
         smail.send(sendto=sendto, subject=subject, attach=file, body=msg)
+import telegram
+
+BOT_TOKEN = 'BOT_TOKENİNİZİ_BURAYA_YAZIN'
+CHAT_ID = -1004634117873  # Grup chat ID (negatif işaretli olmalı)
+
+bot = telegram.Bot(token=BOT_TOKEN)
+
+def test_sinyal_gonder():
+    mesaj = "Test Sinyali: BTC/USDT 10x LONG\nGiriş: 62,000\nHedef: 63,800\nStop: 60,800"
+    bot.send_message(chat_id=CHAT_ID, text=mesaj)
+
+test_sinyal_gonder()  # Bu satır test mesajını gönderir
