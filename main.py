@@ -1,6 +1,6 @@
 import os
 import requests
-import telebot
+import telegram
 from datetime import datetime
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
