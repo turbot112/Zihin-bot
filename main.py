@@ -24,7 +24,7 @@ def start(update: Update, context: CallbackContext):
 
 def yardim(update: Update, context: CallbackContext):
     komutlar = (
-        "/start - Botu başlat
+        "/start - Botu başlat"
 "
         "/coinler - Popüler coin listesi
 "
