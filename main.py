@@ -148,7 +148,7 @@ def is_vip(user_id):
     return user_id in VIP_USERS
 
 def start(update: Update, context: CallbackContext):
-    update.message.reply_text("ZihinBot 3.5’a hoş geldin!
+    update.message.reply_text("ZihinBot 3.5’a hoş geldin!")
 Komutlar: /coinler /fiyat BTCUSDT /rsi BTCUSDT /destek /odeme /vip")
 
 def coinler(update: Update, context: CallbackContext):
